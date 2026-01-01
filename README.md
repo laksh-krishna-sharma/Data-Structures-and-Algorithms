@@ -131,7 +131,7 @@ bin/linked_list_crud
 
 ---
 
-## Goals
+## Objective
 
 * Learn core **Data Structures** (Array, Linked List, Stack, Queue, Trees, Graphs)
 * Implement **CRUD operations**
@@ -146,11 +146,16 @@ bin/linked_list_crud
 * **C++17**
 * **CMake**
 * **GCC / Clang**
-* **clangd + clang-format**
+* **clangd**
+* **clang-format**
 
 ---
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 ## Author
 
 **Laksh Krishna Sharma**
-Learning DSA, C++, and system-level development 🚀
+Learning DSA, C++, and system-level development
