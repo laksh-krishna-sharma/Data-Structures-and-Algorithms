@@ -36,11 +36,43 @@ class SinglyLinkedList {
         temp->next = newNode;
     }
 
-    // Insert At Beginning
+    // Insert at Beginning
     void insertAtBeginning(int data) {
         Node* newNode = new Node(data);
         newNode->next = head;
         head = newNode;
+    }
+
+    // Insert at Position
+    void insertAtPosition(int pos, int data) {
+        if (pos < 0) {
+            cout << "Invalid Position\n";
+            return;
+        }
+        if (pos == 0) {
+            insertAtBeginning(data);
+            return;
+        }
+        if (head == NULL) {
+            cout << "List is Empty\n";
+            return;
+        }
+
+        Node* temp = head;
+        int i = 0;
+
+        while (temp != NULL && i < pos - 1) {
+            temp = temp->next;
+            i++;
+        }
+        if (temp == NULL) {
+            cout << "Invalid Position\n";
+            return;
+        }
+
+        Node* newNode = new Node(data);
+        newNode->next = temp->next;
+        temp->next = newNode;
     }
 
     // Read
@@ -129,6 +161,7 @@ int main() {
     list.insertAtEnd(10);
     list.insertAtEnd(20);
     list.insertAtBeginning(5);
+    list.insertAtPosition(1, 7);
 
     // READ
     list.display();
@@ -139,7 +172,7 @@ int main() {
     list.display();
 
     // DELETE
-    list.deleteAtPosition(0);
+    list.deleteAtPosition(1);
 
     list.display();
 
