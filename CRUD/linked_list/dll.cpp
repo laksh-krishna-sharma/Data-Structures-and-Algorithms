@@ -112,6 +112,18 @@ class DoublyLinkedList{
         }
         cout << endl;
     }
+
+    // Destructor: Frees all nodes in the doubly linked list to prevent memory leaks
+    ~DoublyLinkedList() {
+        Node* current = head;
+        while (current != NULL) {
+            Node* next = current->next;
+            delete current;
+            current = next;
+        }
+        head = NULL;
+        tail = NULL;
+    }
 };
 
 int main(){
