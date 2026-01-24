@@ -26,3 +26,4 @@ endif()
 # Subdirectories
 add_subdirectory(CRUD/array)
 add_subdirectory(CRUD/linked_list)
+add_subdirectory(CRUD/queue)
