@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
 #include "queue.hpp"
+
+#include <bits/stdc++.h>
 using namespace std;
 
 Queue::Queue() : front(nullptr), rear(nullptr), size(0) {}
