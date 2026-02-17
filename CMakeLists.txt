@@ -24,9 +24,13 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif()
 
 # Subdirectories
+## CRUD
 add_subdirectory(CRUD/array)
 add_subdirectory(CRUD/linked_list)
 add_subdirectory(CRUD/queue)
 add_subdirectory(CRUD/stack)
 add_subdirectory(CRUD/trees)
 add_subdirectory(CRUD/binary_search_tree)
+
+## ALGORITHMS
+add_subdirectory(ALGORITHMS/binary_trees)
