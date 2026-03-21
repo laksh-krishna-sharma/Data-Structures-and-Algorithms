@@ -8,8 +8,7 @@ bool subsetSum(vector<int> &a, int sum, int n) {
         for (int j = 0; j < (sum + 1); j++) {
             if (i == 0) {
                 dp[i][j] = false;
-            }
-            if (j == 0) {
+            } else if (j == 0) {
                 dp[i][j] = true;
             } else if (a[i - 1] <= j) {
                 dp[i][j] = dp[i - 1][j - a[i - 1]] || dp[i - 1][j];
@@ -27,6 +26,7 @@ int main() {
     int sum = 12;
     int n = (int)arr.size();
 
-    cout << "Is Subset Sum: " << subsetSum(arr, sum, n) << "\n";
+    cout << "Is Subset Sum: " << (subsetSum(arr, sum, n) ? "True" : "False")
+         << "\n";
     return 0;
 }
