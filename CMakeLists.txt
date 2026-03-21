@@ -34,3 +34,4 @@ add_subdirectory(CRUD/binary_search_tree)
 
 ## ALGORITHMS
 add_subdirectory(ALGORITHMS/binary_trees)
+add_subdirectory(ALGORITHMS/dynamic_programming)
